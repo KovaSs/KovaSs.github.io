@@ -20,22 +20,8 @@
 	<!-- Подключаем наш файл со стилями, который находится в папке css-->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script type="text/javascript">
- 		$(function() {
-		$(window).scroll(function() {
-			if($(this).scrollTop() > 500) {
-			$('#toTop').fadeIn();
-			} else {
-				$('#toTop').fadeOut();
-			}
-			});
-		$('#toTop').click(function() {
-		$('body,html').animate({scrollTop:0},800);
-		});
-		});
- </script>
-
+	<link rel="stylesheet" href="css/animate.css">
+	
 </head>
 
 <body>
@@ -44,13 +30,13 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-7">
-					<img class="header-img" src="img/main-img.png" alt="main">
+					<img class="header-img wow fadeInLeftBig" src="img/main-img.png" alt="main">
 				</div>
 				<div class="col-md-12 col-lg-5">
-					<p class="header_pretitle">Веб-разработчик</p>
-					<h1 class="header_title">Исаев Денис</h1>
-					<p class="header_subtitle">Верстка на HTML/CSS <br> Разработка сайтов под ключ</p>
-					<div class="header-button-block">
+					<p class="header_pretitle wow fadeInRightBig" data-wow-delay="0.1s">Веб-разработчик</p>
+					<h1 class="header_title wow fadeInRightBig" data-wow-delay="0.2s">Исаев Денис</h1>
+					<p class="header_subtitle wow fadeInRightBig" data-wow-delay="0.3s">Верстка на HTML/CSS <br> Разработка сайтов под ключ</p>
+					<div class="header-button-block wow fadeInRightBig" data-wow-delay="0.4s">
 						<a href="#<!-- https://vk.me/kovass -->" class="header-button push">Связаться</a>
 						<small>*Это бесплатно</small>
 					</div>
@@ -95,10 +81,6 @@
 	
 	<footer>
 		<div class="container">
-			<div>
-				<div id="toTop" class="gotop"></div>
-					<button id = "toTop" > ^ </button>
-			</div>
 			<div class="row">
 				<div class="col-md-4">
 					<h4 class="footer-autor">Денис Исаев</h4>
@@ -107,10 +89,10 @@
 				<div class="col-md-4">
 					<div class="social-block">
 						<p class="social-cta">Подпишитесь:</p>
-						<a href="#"><img src="img/socials/facebook-logo-button.png" alt="facebook"></a>
-						<a href="#"><img src="img/socials/vk-social-logotype.png" alt="vk"></a>
-						<a href="#"><img src="img/socials/telegram-symbol.png" alt="telegram"></a>
-						<a href="#"><img src="img/socials/youtube-symbol.png" alt="youtube"></a>
+						<a class="wow bounceInDown" data-wow-delay="0.1s" href="#"><img src="img/socials/facebook-logo-button.png" alt="facebook"></a>
+						<a class="wow bounceInDown" data-wow-delay="0.2s" href="#"><img src="img/socials/vk-social-logotype.png" alt="vk"></a>
+						<a class="wow bounceInDown" data-wow-delay="0.3s" href="#"><img src="img/socials/telegram-symbol.png" alt="telegram"></a>
+						<a class="wow bounceInDown" data-wow-delay="0.4s" href="#"><img src="img/socials/youtube-symbol.png" alt="youtube"></a>
 					</div>					
 				</div>
 				<div class="col-md-4">
@@ -122,5 +104,9 @@
 			</div>
 		</div>
 	</footer>
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
 </body>
 </html>
