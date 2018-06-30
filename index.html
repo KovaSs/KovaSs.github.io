@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<!-- Важная техническая информация для браузера -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Информация об Авторе и описание проекта -->
+	<meta name="description" content="Сайт разработчика Дениса Исаева">
+	<meta name="auyhor" content="Денис Исаев">
+
+	<!-- Иконка, которая будет на вкладке в браузере -->
+	<link rel="icon" href="/favicon.ico">
+	<!-- Заголовок на вкладке в браузере -->
+	<title>Денис Исаев - создание сайтов</title>
+	<!-- Google-fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+
+	<!-- Подключаем наш файл со стилями, который находится в папке css-->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript">
+ 		$(function() {
+		$(window).scroll(function() {
+			if($(this).scrollTop() > 500) {
+			$('#toTop').fadeIn();
+			} else {
+				$('#toTop').fadeOut();
+			}
+			});
+		$('#toTop').click(function() {
+		$('body,html').animate({scrollTop:0},800);
+		});
+		});
+ </script>
+
+</head>
+
+<body>
+	<!-- Тут будет cодержимое будущего сайта -->
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7">
+					<img class="header-img" src="img/main-img.png" alt="main">
+				</div>
+				<div class="col-md-12 col-lg-5">
+					<p class="header_pretitle">Веб-разработчик</p>
+					<h1 class="header_title">Исаев Денис</h1>
+					<p class="header_subtitle">Верстка на HTML/CSS <br> Разработка сайтов под ключ</p>
+					<div class="header-button-block">
+						<a href="#<!-- https://vk.me/kovass -->" class="header-button push">Связаться</a>
+						<small>*Это бесплатно</small>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="portfolio">
+		<div class="container">
+			<div class="portfolio-block">
+				<h2 class="portfolio-title">Портфолио</h2>
+				<p class="set-title">Мои работы</p>
+				<div class="row">
+					<div class="col-md-12 col-lg-6">
+						<div class="portfolio-col-1">
+							<img src="img/portfolio-img-1.jpg" alt="Гаспром">
+							<div class="desc">
+								<h3>внутренний университет «Газпром нефти»</h3>
+								<p class="portfolio-text">У «Газпром нефти» есть внутренний Корпоративный университет для сотрудников. Это настоящий университет, где сотрудники проходят обучение у внутренних тренеров компании или у специально приглашенных лекторов и экспертов....</p>
+								<a href="#">Смотреть работу</a>
+							</div>
+							<!-- /.desc -->
+						</div>
+					</div>
+					<div class="col-md-12 col-lg-6">
+						<div class="portfolio-col-2">
+							<img src="img/portfolio-limg-2.jpg" alt="Мир">
+							<div class="desc">
+								<h3>Сайт платежной системы «Мир»</h3>
+								<p class="portfolio-text">Обновленная версия сайта знакомит посетителей с компаниями, уже принимающими карты к оплате, и приглашает всех остальных присоединиться к проекту...</p>
+								<a href="#">Смотреть работу</a>
+							</div>
+							<!-- /.desc -->
+					</div>
+						</div>
+				</div>
+				<!-- /.row -->
+			</div>
+		</div>
+	</section>
+	
+	<footer>
+		<div class="container">
+			<div>
+				<div id="toTop" class="gotop"></div>
+					<button id = "toTop" > ^ </button>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<h4 class="footer-autor">Денис Исаев</h4>
+					<div class="footer-text">Разработка сайтов под ключ</div>
+				</div>
+				<div class="col-md-4">
+					<div class="social-block">
+						<p class="social-cta">Подпишитесь:</p>
+						<a href="#"><img src="img/socials/facebook-logo-button.png" alt="facebook"></a>
+						<a href="#"><img src="img/socials/vk-social-logotype.png" alt="vk"></a>
+						<a href="#"><img src="img/socials/telegram-symbol.png" alt="telegram"></a>
+						<a href="#"><img src="img/socials/youtube-symbol.png" alt="youtube"></a>
+					</div>					
+				</div>
+				<div class="col-md-4">
+					<div class="footer-cta-block">
+						<div class="feed-cta">Напишите мне:</div>
+						<a href="#<!-- https://vk.me/kovass -->"class="footer-button push">Написать</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
